@@ -32,8 +32,8 @@
                <children>
                   <Label layoutX="37.0" layoutY="5.0" text="Partita" />
                   <Button layoutX="80.0" mnemonicParsing="false" onAction="#handleNuovaPartita" text="Nuova" />
-                  <Label layoutX="168.0" layoutY="5.0" text="Tentativi Rimasti" />
-                  <TextField fx:id="txtTentativiRimasti" editable="false" layoutX="268.0" prefHeight="25.0" prefWidth="25.0" />
+                  <Label layoutX="168.0" layoutY="5.0" text="Tentativi Fatti (max 8)" />
+                  <TextField fx:id="txtTentativiRimasti" editable="false" layoutX="299.0" prefHeight="25.0" prefWidth="25.0" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -41,7 +41,7 @@
             </AnchorPane>
             <HBox fx:id="boxControlloTentativi" disable="true" spacing="5.0">
                <children>
-                  <Label text="Tentativo" />
+                  <Label text="Tentativo (Range numero:  1-100)" />
                   <TextField fx:id="txtTentativo" />
                   <Button mnemonicParsing="false" onAction="#handleProvaTentativo" text="Prova" />
                </children>
